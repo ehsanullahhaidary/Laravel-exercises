@@ -1,4 +1,10 @@
 <x-layout>
-    <h1>Hello</h1>
+    @auth
+        <h1>Logged in</h1>
+    @endauth
+
+    @guest
+        <h1>guest</h1>
+    @endguest
 </x-layout>
 

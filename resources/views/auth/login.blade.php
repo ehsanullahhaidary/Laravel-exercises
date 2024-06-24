@@ -33,8 +33,15 @@
                 <label for="remember">Remember me</label>
             </div>
 
+
+                @error('failed')
+                <p class="mb-2 error">{{ $message }}</p>
+                @enderror
+
+
             {{-- Submit Button --}}
             <button class="btn" >Login</button>
+
         </form>
     </div>
 </x-layout>

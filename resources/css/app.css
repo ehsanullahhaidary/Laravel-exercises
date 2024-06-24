@@ -49,6 +49,11 @@
     .title {
         @apply my-6 text-center text-3xl font-bold leading-9 text-slate-900;
     }
+    .round-btn {
+        @apply w-8 h-8 rounded-full overflow-auto bg-slate-100
+         focus:outline-none focus:ring-1 focus:ring-slate-100
+         focus:ring-offset-2 focus:ring-offset-slate-800;
+    }
     .error {
         @apply text-xs text-red-500 mt-1;
     }
@@ -69,5 +74,17 @@
     }
     .avatar {
         @apply w-8 h-8 rounded-full overflow-hidden object-center object-cover;
+    }
+    .card {
+        @apply bg-white p-6 rounded-lg shadow-lg border
+        border-slate-200;
+    }
+    .input {
+        @apply block w-full p-2 rounded-md ring-1 ring-slate-600
+        focus:ring-slate-900 focus:ring-2 outline-0 border-0
+        mt-1;
+    }
+    .username {
+        @apply pl-4 pr-8 py-1 mt-1;
     }
 }
